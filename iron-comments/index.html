@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title> Iron Comments </title>
-    
+
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
-<body>
 
-    <form id="form-container">
-        Name: Email: Comment: Receive email updates? Submit
+<body>
+    <header>
+        <h1>Iron Comments Lab</h1>
+    </header>
+
+    <form id="form-container" action="enviar" method="post">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name">
+
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email">
+
+        <label for="comment">Comment: </label>
+        <textarea name="comment" id="comment" rows="7"></textarea>
+
+        <label for="updates" class="updates">
+            <i>Receive email updates?</i>
+            <input type="checkbox" id="updates" name="updates">
+        </label>
+
+
+        <button type="submit">Submit</button>
     </form>
 
 </body>
+
 </html>
